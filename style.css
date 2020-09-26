@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+body{
+    background: #f5f5f5;
+}
+
+
+/* the top section begins here. */
+
+.top-heading{
+    box-sizing: border-box;
+}
+.top-heading img{
+    margin-left: -2rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
+}
+
+.jumia-sell{
+    margin-left: -2rem; 
+    width: 100%;
+    /* margin-top: 6px; */
+}
+.star-Sell{
+    margin-top:-1rem;
+}
+
+.fa-star{
+color: white;
+/* margin-top: -2rem; */
+/* margin: 1px 1px; */
+font-size: 11px;
+background: #f68b1e;
+border-radius: 50%;
+padding: 2px;
+}
+.star-MainSell{
+    color:  #f68b1e;
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+    font-weight: bold;
+    margin-top:2rem;
+    font-size: 12px;
+}
+.Btop-heading{
+    display: flex;
+    padding: 2px;
+}
+
+#Tlogo{
+    width: 10%;
+}
+#venture-jumia-party, 
+#venture-pay, 
+#venture-jumia-now, 
+#venture-food{
+    width: 10%;
+    filter: grayscale(1);
+}
+#venture-jumia-party:hover, 
+#venture-pay:hover, 
+#venture-jumia-now:hover, 
+#venture-food:hover{
+    filter: grayscale(0);
+}
+
+
+/* the top section ends here.......................................... */
+
+
+/* -- the navbar section begins here -- */
+.navbarSection{
+    background: white;
+    padding: 8px;
+   
+}
+
+#logo{
+    width: 13%;
+    margin-left: -2rem;
+}
+
+.navbarSection input{
+    border: 1px solid #c7c7cd;
+    border-radius: 4px;
+    border-left: none;
+    outline: none;
+    width: 40%;
+    padding: 8px;
+   
+}
+
+
+.navbarSection .fa-search{
+    border: 1px solid #c7c7cd;
+    padding: 12px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-right: none;
+    margin-right: -0.7px;
+    cursor: pointer;
+    margin-left:5rem;
+    margin-top: 10px;
+}
+
+.navbarSection button{
+border-radius: 4px;
+background-color: #f68b1e;
+color: #fff;
+font-size: 16px;
+/* line-height: 1.9rem; */
+text-align: center;
+font-weight: 500;
+padding: 9px 16px;
+font-family: Roboto,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+text-transform: uppercase;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+cursor: pointer;
+margin-left: 8px;
+}
+.navbarSection button:hover{
+    color: white;
+}
+
+#perm-identity{
+    width: 2%;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+#help-outline, #shopping-cart{
+    width: 2%;
+   margin-left: 26px;
+   cursor: pointer;
+}
+
+
+
+
+/* -- the navbar section ends here -- */
+
+
+/* <!-- CSS for the product shows begins here............................. --> */
+.productBody{
+    background: center 0 no-repeat url(https://ng.jumia.is/cms/JMALL/W39/BG.jpg);
+    box-sizing: border-box;
+    padding: 14px;
+    width: 100%;
+}
+
+.product-list{
+    background: white;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
+    border-radius: 4px;
+    padding: 2px;
+}
+.fa-apple, .fa-cutlery, .fa-home, .fa-mobile, .fa-desktop{
+ margin-right: 10px;
+}
+.product-list ul li{
+    list-style: none;
+    margin-left: -28px;
+   padding: 2px;
+   cursor: pointer;
+}
+.product-list ul li:hover{
+    color:#f68b1e;
+}
+
+.product-list ul li ul{
+    display: none;
+    z-index: 10;
+    top: 178px;
+}
+
+.product-list ul li:hover ul{
+    display: block;
+    height: 370px;
+    width: 51%;
+    margin-left: 12.0%;
+    /* padding: 0 100px 10px 10px; */
+    position: fixed;
+    background: white;
+    border-left: 1px solid #c7c7cd;
+    border-radius: 4px;
+    /* box-shadow: 1px 1px 4px 1px rgb(0, 0, 0, 0.4); */
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
+}
+#bill-list{
+    padding: 8px;
+}
+#bill-list li{
+    color: #3c3c3ff5;
+    font-size: 12px;
+    
+    /* transform: scale(0) */
+}
+
+#bill-list li:hover{
+    color: black;
+    
+}
+#bill-list h5{
+    /* border-bottom: 1px solid #c7c7cd; */
+    margin-left: -21px;
+    color: #3c3c3ff5;
+    position: relative;
+    /* font-weight: bold; */
+}
+#bill-list h5:hover{
+    color:#f68b1e;
+}
+#bill-list h5::after{
+ content: "";
+ position: absolute;
+ border-bottom: 1px solid #c7c7cd;
+ width: 100%;
+ top: 26px;
+ left: -2px;
+}
+.bill-list-A, .bill-list-B{
+    /* margin-right: 2rem; */
+}
+
+.product-Show{
+    background: white;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
+    margin-left: 20px;
+    border-radius: 4px;
+     
+}
+#demo{
+width: 104.5%;
+margin-left: -.9rem;
+border-radius: 4px;
+}
+.product-Show img{
+    width: 102%;
+    background-size: cover;
+    margin: 0px;
+    
+}
+.product-show-B{
+    background: center 0 no-repeat url(https://ng.jumia.is//cms/JMALL/W39/unnamed.png);
+    /* background: white; */
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
+    margin-left: 15px;
+    height: 11rem;
+    /* padding: 20px; */
+    width: 130%;
+    border-radius: 4px;
+  
+    background-size: cover;
+}
+
+.product-show-C{
+    background: center 0 no-repeat url(https://ng.jumia.is//cms/JMALL/W39/AEACADC4-CCCF-4827-8F16-ED3CA5103CFA.jpeg);
+    /* background: white; */
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
+    margin-left: 15px;
+    height: 11rem;
+    padding: 20px;
+    margin-top:15px;
+    width: 130%;
+    border-radius: 4px;
+   background-size: cover;
+}
+
+/* https://ng.jumia.is//cms/JMALL/W39/AEACADC4-CCCF-4827-8F16-ED3CA5103CFA.jpeg */
+/* color: #282828; */
+/* background-color: #ededed ----the bgcolor of the login btn*/
