@@ -264,6 +264,60 @@ border-radius: 4px;
    background-size: cover;
 }
 
+/* <!-- /CSS for the product shows ends here............................. --> */
+
+
+
+/* <!-- Jumia purshased section begins here..................................... --> */
+  .jumia-purchase{
+      padding: 13px;
+        
+  }
+  /* .jumia-purchase-A{
+      margin-left:-10px;
+  } */
+
+.jumia-purchase-A, .jumia-purchase-B, .jumia-purchase-C, .jumia-purchase-D{
+    background: white;
+    border-radius: 4px;
+    display: flex;
+    margin-left:-12px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
+}
+.jumia-purchase-A p, .jumia-purchase-B p, .jumia-purchase-C p, .jumia-purchase-D p{
+   margin-top: 14px;
+}
+.jumia-purchase-A img, .jumia-purchase-B img, .jumia-purchase-C img, .jumia-purchase-D img{
+    width: 20%;
+    padding: 8px;
+}
+
+
+/* <!-- Product showcase begins here --------------------------------------------------- --> */
+
+.product-Showcase{
+    background: white;
+    border-radius: 4px;
+     padding: 10px;
+     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
+}
+.product-Showcase img{
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+}
+.product-Showcase h6{
+    padding: 7px;
+    font-size: 19px;
+    font-weight: bold;
+}
+.product-Showcase-A{
+    box-shadow: 2px 2px 4px rgba(17, 16, 16, 0.3);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
 /* https://ng.jumia.is//cms/JMALL/W39/AEACADC4-CCCF-4827-8F16-ED3CA5103CFA.jpeg */
 /* color: #282828; */
 /* background-color: #ededed ----the bgcolor of the login btn*/
