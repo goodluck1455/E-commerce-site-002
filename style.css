@@ -70,6 +70,8 @@ padding: 2px;
 .navbarSection{
     background: white;
     padding: 8px;
+    cursor: pointer;
+    user-select: none;
    
 }
 
@@ -77,6 +79,7 @@ padding: 2px;
     width: 13%;
     margin-left: -2rem;
 }
+.navbarSection-break, .fa-bars{display: none;}
 
 .navbarSection input{
     border: 1px solid #c7c7cd;
@@ -101,7 +104,7 @@ padding: 2px;
     margin-top: 10px;
 }
 
-.navbarSection button{
+#navbarSectionLogin{
 border-radius: 4px;
 background-color: #f68b1e;
 color: #fff;
@@ -125,13 +128,158 @@ margin-left: 8px;
   cursor: pointer;
   margin-left: 30px;
 }
+/* .loginHover:hover{
+    color: #f68b1e;
+} */
+
+.perm-identity-2:hover, .help-outline-2:hover, .shopping-cart-2:hover{
+    color: #f68b1e;
+}
+
 
 #help-outline, #shopping-cart{
     width: 2%;
    margin-left: 26px;
    cursor: pointer;
 }
+#navbarSectionLogin-2{
+    border-radius: 4px;
+    background-color: #f68b1e;
+    color: #fff;
+    font-size: 16px;
+    /* line-height: 1.9rem; */
+    text-align: center;
+    font-weight: 500;
+    width: 80%;
+   margin-top: 1rem; 
+   /* left: -4rem; */
+    padding: 9px 16px;
+    font-family: Roboto,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+    margin-left: 1.5rem;  
+}
 
+.loginHover{
+    background: white; 
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.15);
+    width: 370%;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 999;
+    height: auto;
+    padding: 4px;
+    margin-left: -4rem;
+    position: fixed;
+    border: none;
+    
+}
+
+.loginHoverB{
+    background: white; 
+    position: fixed;
+    /* box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05); */
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.15);
+    width: 16%;
+    /* top: 9rem !important; */
+    border-radius: 4px;
+    /* position: absolute; */
+    /* z-index: 999; */
+    height: auto;
+    padding: 4px;
+    margin-top: 9rem;
+    margin-left: -6rem;
+    margin-right: 0px;
+   /* left: -3rem ; */
+    padding: 8px;
+    /* display: none; */
+    border: none;
+    
+}
+
+
+/* .loginHoverA, .loginHoverC{
+    display: block;
+} */
+
+.loginHover h6{
+    text-align: center;
+   margin-top: 10px;
+   color: #c7c7cd;
+   position: relative;
+}
+.loginHover h6::before{
+    content: "";
+    top: -3.1rem;
+    left: 2px;
+    width: 40%;
+    
+    height: 4rem;
+    border-bottom: 2px solid #c7c7cd;
+    position: absolute;
+}
+.loginHover h6::after{
+    content: "";
+    top: -3.1rem;
+    left: 127px;
+    width: 39%;
+    
+    height: 4rem;
+    border-bottom: 2px solid #c7c7cd;
+    position: absolute;
+}
+.loginHover span{
+    text-align: center;
+    margin-top: 10px;
+    color: #f68b1e;
+    position: relative;
+    cursor: pointer;
+    padding: 6px;
+    margin-left:20px;
+    right:20px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;   
+}
+
+.loginHover span::after{
+    content: "";
+    top: -1.4rem;
+    left: 0rem;
+    width: 100%;
+    height: 4rem;
+    border-bottom: 2px solid #c7c7cd;
+    position: absolute;
+}
+
+.loginHover span:hover{
+    background-color: #feefde;
+   
+}
+.customer-info{
+    margin-top: 20px;
+}
+.customer-info h5{
+    
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 100;
+}
+.customer-info h5:hover{
+    background-color: rgba(0,0,0,0.05);
+}
+
+#customer-identity{
+width: 12%;
+margin-top: -.6rem;
+margin-right: 14px;
+
+}
+.fa-credit-card, .fa-heart-o{
+    margin-right: 20px; 
+}
 
 
 
@@ -146,11 +294,18 @@ margin-left: 8px;
     width: 100%;
 }
 
+.productRoll{
+    display: grid;
+    grid-template-columns: 19% 55% 18%;
+    grid-gap: 24px;
+}
+
 .product-list{
     background: white;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
     border-radius: 4px;
-    padding: 2px;
+    padding: 1px;
+    /* height: 50%; */
 }
 .fa-apple, .fa-cutlery, .fa-home, .fa-mobile, .fa-desktop{
  margin-right: 10px;
@@ -168,20 +323,20 @@ margin-left: 8px;
 .product-list ul li ul{
     display: none;
     z-index: 10;
-    top: 178px;
+    top: 180px;
 }
 
 .product-list ul li:hover ul{
     display: block;
-    height: 370px;
-    width: 51%;
-    margin-left: 12.0%;
+    height: 354px;
+    width: 48.2%;
+    margin-left: 13.3%;
     /* padding: 0 100px 10px 10px; */
     position: fixed;
     background: white;
     border-left: 1px solid #c7c7cd;
     border-radius: 4px;
-    /* box-shadow: 1px 1px 4px 1px rgb(0, 0, 0, 0.4); */
+    
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
 }
 #bill-list{
@@ -223,18 +378,25 @@ margin-left: 8px;
 .product-Show{
     background: white;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
-    margin-left: 20px;
+    /* margin-left: 20px; */
     border-radius: 4px;
+   height: 99%;
      
 }
 #demo{
-width: 104.5%;
-margin-left: -.9rem;
+/* width: 100%; */
+border-radius: 4px;
+box-sizing: border-box;
+/* height: 120%; */
+/* margin-left: -.2rem; */
 border-radius: 4px;
 }
 .product-Show img{
-    width: 102%;
+    width: 100%;
+    border-radius: 4px;
+    height: 21.9rem;
     background-size: cover;
+    padding: 1px;
     margin: 0px;
     
 }
@@ -242,10 +404,10 @@ border-radius: 4px;
     background: center 0 no-repeat url(https://ng.jumia.is//cms/JMALL/W39/unnamed.png);
     /* background: white; */
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
-    margin-left: 15px;
-    height: 11rem;
+    /* margin-left: 15px; */
+    height: 10.5rem;
     /* padding: 20px; */
-    width: 130%;
+    width: 100%;
     border-radius: 4px;
   
     background-size: cover;
@@ -255,11 +417,11 @@ border-radius: 4px;
     background: center 0 no-repeat url(https://ng.jumia.is//cms/JMALL/W39/AEACADC4-CCCF-4827-8F16-ED3CA5103CFA.jpeg);
     /* background: white; */
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
-    margin-left: 15px;
-    height: 11rem;
+    /* margin-left: 15px; */
+    height: 10.5rem;
     padding: 20px;
-    margin-top:15px;
-    width: 130%;
+    margin-top:13px;
+    width: 100%;
     border-radius: 4px;
    background-size: cover;
 }
@@ -272,6 +434,13 @@ border-radius: 4px;
   .jumia-purchase{
       padding: 13px;
         
+  }
+
+  .jumia-purchaseRoll{
+      display: grid;
+      grid-template-columns: 23% 23% 23% 23%;
+      grid-gap: 33px;
+      margin-top: 10px;
   }
   /* .jumia-purchase-A{
       margin-left:-10px;
@@ -291,6 +460,7 @@ border-radius: 4px;
     width: 20%;
     padding: 8px;
 }
+.jumia-purchase-F, .jumia-purchase-G, .jumia-purchase-H, .jumia-purchase-I{display: none;}
 
 
 /* <!-- Product showcase begins here --------------------------------------------------- --> */
@@ -306,16 +476,398 @@ border-radius: 4px;
     padding: 10px;
     border-radius: 4px;
 }
+
 .product-Showcase h6{
     padding: 7px;
     font-size: 19px;
     font-weight: bold;
 }
-.product-Showcase-A{
+/* .product-Showcase-A{
     box-shadow: 2px 2px 4px rgba(17, 16, 16, 0.3);
     border-radius: 4px;
     cursor: pointer;
+} */
+/* .product-Showcase-A{
+
+} */
+.showcase-naira{
+    text-decoration-line: line-through;
 }
+.product-Showcase-A h6,
+.product-Showcase-B h6, 
+.product-Showcase-C h6, 
+.product-Showcase-D h6, 
+.product-Showcase-E h6, .product-Showcase-F h6{
+    font-size: 1.1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 400;
+    margin-left: -0.3rem;
+    text-indent: 1.5;
+}
+.main-naira-B{
+    font-size: 20px;
+    font-weight: bold;
+}
+.product-Showcase p{
+    line-height: 2px;
+}
+.price-tag{
+    color: #f68b1e;
+    background-color: #feefde;
+    position: absolute; 
+    margin-left: 7.8rem;
+    border-radius: 2px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+/* <!-- the CSS for Jumia brand festival begins here ---------------------------........ --> */
+.jumia-brand{
+    background-color: #dddbe6;
+}
+.jumia-brand-A{
+    background: white;
+    border-radius: 4px;
+     /* padding: 10px; */
+     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
+}
+.jumia-brand-A img{
+    width: 100%;
+    padding: 8px;
+}
+
+.jumia-brand-title{
+    background: red;
+    color: white;
+    width: 102.8%;
+    margin-left: -15px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 5px;
+    display: flex;
+}
+.jumia-brand-title h4{
+    padding: 5px;
+    font-family: Roboto,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+}
+.jumia-brand-deal{
+ font-size: 23px;
+ font-weight: none;
+
+}
+.jumia-brand-view-more{
+    margin-left: 38rem;
+    margin-top: 10px;
+    font-family: Roboto,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+    cursor: pointer;
+}
+.fa-angle-right{
+    margin-left:5px;
+    cursor: pointer;
+}
+
+
+
+
+/*----------------------------------------------------------------------------------------
+ ----------------Media queries begins from here ------------------------------------------ */
+
+ /* -------------media query for ipad @768------------------------ */
+
+ @media screen and (min-width:768px) and (max-width:1024px){
+    .top-heading img{display: none;}
+
+    .product-list,
+    .product-show-B, 
+    .product-show-C,
+    .Btop-heading{display: none;}
+
+    .product-Show{
+        min-width: 557%;
+        max-width: 550%;
+    margin-left: -20px;}
+
+    .jumia-purchaseRoll{
+        /* background: white; */
+        /* grid-template-columns: 23% 23% 23% 23%; */
+        grid-gap: 20px;
+    }
+    .jumia-purchase{
+         background: white;
+         margin: 10px auto;
+         border-radius: 4px;
+    }
+
+
+
+    .jumia-purchase-A, .jumia-purchase-B, .jumia-purchase-C, .jumia-purchase-D{
+        background: none;
+        border-radius: 4px;
+        display: block;
+        
+        text-align: center;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
+    }
+
+
+    .jumia-purchase-A img, 
+    .jumia-purchase-B img, 
+    .jumia-purchase-C img, 
+    .jumia-purchase-D img,
+    .jumia-purchase-F img, 
+    .jumia-purchase-G img, 
+    .jumia-purchase-H img, 
+    .jumia-purchase-I img{
+        width: 60%;
+        padding: 4px;
+    }
+    .jumia-purchase-A p, 
+    .jumia-purchase-B p, 
+    .jumia-purchase-C p, 
+    .jumia-purchase-D p,
+    .jumia-purchase-F p, 
+    .jumia-purchase-G p, 
+    .jumia-purchase-H p, 
+    .jumia-purchase-I p{
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .jumia-purchase-F, 
+    .jumia-purchase-G, 
+    .jumia-purchase-H, 
+    .jumia-purchase-I{
+        display: block;
+        text-align: center;}
+
+        .navbarSection-break{display: block;}
+
+        .navbarSection input{
+            width: 95%;
+            margin-top: 30px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            /* margin-left: 50px; */
+        }
+
+        /* .navbarSection{
+            top: 10px;
+            z-index: 999;
+            position: fixed;
+           
+        } */
+
+       .navbarSection .fa-search{
+            margin-left: -1rem;
+            margin-top: 30px;
+        }
+        .navbarSection #logo{
+            padding: 8px;
+            position: absolute;
+            width: 20%;
+            margin-left: 1.4rem;
+         }
+        #perm-identity{
+            margin-top: -1.5rem;
+            width: 6%;
+            padding: 5px;
+            margin-left: -7rem;
+            position: absolute;
+        }
+        #shopping-cart{ 
+            padding: 5px;
+            margin-top: -1.2rem;
+            position: absolute;
+            margin-left: -3rem;
+            width: 5.3%;}
+
+        #navbarSectionLogin, 
+        .perm-identity-2, 
+        .help-outline-2, 
+        #help-outline, 
+        .shopping-cart-2{display: none;}
+
+        .fa-bars{
+            display: block;
+            font-size: 23px;
+            margin-top: 10px;
+            position: absolute;
+            cursor: pointer;
+        }
+
+
+
+
+ }
+
+
+/*.................................................................
+ media query for iphones begins here........................... */
+
+ @media screen and (max-width:375px){
+    .top-heading img,
+    .product-list,
+    .product-show-B, 
+    .product-show-C,
+    .Btop-heading,
+    #navbarSectionLogin, 
+    .perm-identity-2, 
+    .help-outline-2, 
+    #help-outline, 
+    .shopping-cart-2{display: none;}
+
+
+
+
+
+
+    .jumia-purchaseRoll{
+        /* background: white; */
+        /* grid-template-columns: 23% 23% 23% 23%; */
+        grid-gap: 10px;
+    }
+    .jumia-purchase{
+         background: white;
+         margin: 10px auto;
+         border-radius: 4px;
+    }
+
+
+
+    .jumia-purchase-A, .jumia-purchase-B, .jumia-purchase-C, .jumia-purchase-D{
+        background: none;
+        border-radius: 4px;
+        display: block;
+        text-align: center;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
+    }
+
+
+    .jumia-purchase-A img, 
+    .jumia-purchase-B img, 
+    .jumia-purchase-C img, 
+    .jumia-purchase-D img,
+    .jumia-purchase-F img, 
+    .jumia-purchase-G img, 
+    .jumia-purchase-H img, 
+    .jumia-purchase-I img{
+        width: 60%;
+        padding: 4px;
+    }
+    .jumia-purchase-A p, 
+    .jumia-purchase-B p, 
+    .jumia-purchase-C p, 
+    .jumia-purchase-D p,
+    .jumia-purchase-F p, 
+    .jumia-purchase-G p, 
+    .jumia-purchase-H p, 
+    .jumia-purchase-I p{
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .jumia-purchase-F, 
+    .jumia-purchase-G, 
+    .jumia-purchase-H, 
+    .jumia-purchase-I{
+        display: block;
+        text-align: center;}
+
+
+        .product-Show{
+            width: 593%;
+            /* max-width: 550%; */
+            /* height: 990%; */
+        margin-left: -20px;}
+
+        .product-Show img{
+            
+            height: 15rem;
+            background-size: cover;
+           
+            
+        }
+
+
+
+
+
+
+
+
+
+        .navbarSection-break{display: block;}
+
+         .navbarSection input{
+            width: 91%;
+            margin-top: 26px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            
+        } 
+
+      
+
+       .navbarSection .fa-search{
+            margin-left: -.8rem;
+            margin-top: 26px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        .navbarSection #logo{
+            padding: 8px;
+            position: absolute;
+            width: 29%;
+            margin-top: 4px;
+            margin-left: 1.4rem;
+         }
+        #perm-identity{
+            margin-top: -1.4rem;
+            width: 10%;
+            padding: 5px;
+            margin-left: -6.3rem;
+            position: absolute;
+        }
+        #shopping-cart{ 
+            padding: 5px;
+            margin-top: -1.3rem;
+            position: absolute;
+            margin-left: -3rem;
+            width: 9.5%;}
+
+        #navbarSectionLogin, 
+        .perm-identity-2, 
+        .help-outline-2, 
+        #help-outline, 
+        .shopping-cart-2{display: none;}
+
+        .fa-bars{
+            display: block;
+            font-size: 23px;
+            margin-top: 10px;
+            position: absolute;
+            cursor: pointer;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+ }
 
 
 /* https://ng.jumia.is//cms/JMALL/W39/AEACADC4-CCCF-4827-8F16-ED3CA5103CFA.jpeg */
