@@ -538,6 +538,9 @@ border-radius: 4px;
      /* padding: 10px; */
      box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
 }
+
+.jumia-brand-break{display: none}
+
 .jumia-brand-A img{
     width: 100%;
     padding: 8px;
@@ -858,12 +861,39 @@ border-radius: 4px;
 
 
 
-        .price-tag{
-           
-            margin-left: 7rem;
-          
-            
+        .price-tag{ margin-left: 7rem;}
+
+        .jumia-brand-title{
+            /* background: red; */
+            /* color: white; */
+            width: 109.1%;
+            /* margin-left: -15px; */
+            /* border-top-left-radius: 4px;
+            border-top-right-radius: 4px; */
+            padding: 2px;
+            display: flex;
         }
+
+
+
+
+        .jumia-brand-title h4{
+            font-size: 16px;
+        }
+        .jumia-brand-break{display: block}
+        .jumia-brand-deal{ font-size: 15px; }
+
+        .jumia-brand-view-more{
+            margin-left: 6rem;
+            /* margin-top: 10px;
+            font-family: Roboto,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+            cursor: pointer; */
+        }
+      
+
+
+
+
 
 
 
