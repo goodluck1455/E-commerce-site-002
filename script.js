@@ -4,29 +4,15 @@ let loginHover = document.querySelector(".loginHover");
 let helpoutline = document.querySelector(".help-outline-2");
 let loginHoverB = document.querySelector(".loginHoverB");
 
+let menubar = document.querySelector(".menubar");
+let closeMenu = document.querySelector("#closeBtn");
+let openMenu = document.querySelector("#menu-btn");
 
-// permIdentity.addEventListener("click", ()=>{
-//     if(body !== "click"){
-//         loginHover.style.display = "block";
-//     } else{
-        
-//         loginHover.style.display = "none"; 
-//     }
-    
-    // loginHover.style.display = "block";
+openMenu.addEventListener("click", ()=>{
+    menubar.style.display = "block";
 
-
-    // if(helpoutline === true){
-    //     loginHover.style.display = "none";
-    // }else{
-    // loginHover.classList.toggle("loginHoverA");
-    // return;}
 })
+closeMenu.addEventListener("click", ()=>{
+    menubar.style.display = "none";
 
-// helpoutline.addEventListener("onmouseover", ()=>{
-//     loginHoverB.style.display = "block";
-//     // return;
-// })
-// function mouse(){
-//     loginHover.classList.toggle("loginHoverA");
-// }
+})

@@ -282,6 +282,89 @@ margin-right: 14px;
 }
 
 
+/* MENU BAR FOR MOBILE DEVICES BEGINS HERE */
+.menubar{
+    background: white;
+    position: absolute;
+    width: 90%;
+    z-index: 80;
+    top: 0;
+    height:auto;
+    box-sizing:border-box;
+    transition: 2s ease-in-out;
+    position:fixed;
+    scroll-behavior: smooth;
+    display: none;
+}
+
+
+
+.closeMenu{
+    border-bottom: 1px solid #c7c7cd;
+    padding: 10px;
+}
+.closeMenu .fa-times{
+    font-size: 1.5rem;
+    padding: 8px;
+    font-weight: 100;
+    cursor: pointer;
+}
+.closeMenu #logo{
+    width: 35%;
+    margin-left: 10px;
+}
+.menubaAccount{
+    margin-top: -6px;
+    border-bottom: 1px solid #c7c7cd;
+    padding-left: 10px;
+
+}
+.menubaAccount h6{
+    font-size: 1rem;
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",Arial,sans-serif;
+    color: #f68b1e;
+    padding: 10px;
+}
+
+.menubaAccount h5{
+padding: 10px;
+font-size: 18px;
+line-height: 3px;
+}
+.menubaAccount .fa-angle-right{
+margin-left: 7rem;
+font-size: 23px;
+color: black;
+}
+.menubaProductList{
+    font-size: 1rem;
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",Arial,sans-serif;
+    color: #f68b1e;
+    padding: 10px;
+}
+.menubaProductList-A{
+    display: flex;
+}
+.menubaProductList-A span{
+    margin-left: 8rem;
+    text-decoration: underline;
+    color: black;
+    font-size: .9rem;
+}
+.menubaProductList-B ul li{
+    list-style:none;
+    margin-left: -2rem;
+    color: black;
+ padding: 10px;
+
+}
+.menubaProductList-B .fa{
+    font-size: 130%;
+    width: 8%;
+    margin-right: 1rem;
+}
+
+
 
 /* -- the navbar section ends here -- */
 
@@ -371,9 +454,9 @@ margin-right: 14px;
  top: 26px;
  left: -2px;
 }
-.bill-list-A, .bill-list-B{
-    /* margin-right: 2rem; */
-}
+/* .bill-list-A, .bill-list-B{
+     margin-right: 2rem; 
+} */
 
 .product-Show{
     background: white;
@@ -593,8 +676,8 @@ border-radius: 4px;
     .Btop-heading{display: none;}
 
     .product-Show{
-        min-width: 557%;
-        max-width: 550%;
+        width: 554%;
+        max-width: 554%;
     margin-left: -20px;}
 
     .jumia-purchaseRoll{
@@ -629,6 +712,7 @@ border-radius: 4px;
     .jumia-purchase-H img, 
     .jumia-purchase-I img{
         width: 60%;
+        max-width:50%;
         padding: 4px;
     }
     .jumia-purchase-A p, 
@@ -881,7 +965,7 @@ border-radius: 4px;
             font-size: 16px;
         }
         .jumia-brand-break{display: block}
-        .jumia-brand-deal{ font-size: 15px; }
+        .jumia-brand-deal{ font-size: 12px; }
 
         .jumia-brand-view-more{
             margin-left: 6rem;
