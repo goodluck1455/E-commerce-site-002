@@ -388,6 +388,7 @@ color: black;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
     border-radius: 4px;
     padding: 1px;
+    
     /* height: 50%; */
 }
 .fa-apple, .fa-cutlery, .fa-home, .fa-mobile, .fa-desktop{
@@ -406,6 +407,7 @@ color: black;
 .product-list ul li ul{
     display: none;
     z-index: 10;
+    position: absolute;
     top: 180px;
 }
 
@@ -415,11 +417,9 @@ color: black;
     width: 48.2%;
     margin-left: 13.3%;
     /* padding: 0 100px 10px 10px; */
-    position: fixed;
     background: white;
     border-left: 1px solid #c7c7cd;
     border-radius: 4px;
-    
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
 }
 #bill-list{
