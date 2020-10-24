@@ -90,6 +90,9 @@ padding: 2px;
     padding: 8px;
    
 }
+@media screen and (max-width:320px){
+    .navbarSection input {width: 80%;}
+}
 
 
 .navbarSection .fa-search{
@@ -292,7 +295,6 @@ margin-right: 14px;
     height:auto;
     box-sizing:border-box;
     transition: 2s ease-in-out;
-    position:fixed;
     scroll-behavior: smooth;
     display: none;
 }
@@ -552,6 +554,7 @@ border-radius: 4px;
     background: white;
     border-radius: 4px;
      padding: 10px;
+     margin-top: -21px;
      box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
 }
 .product-Showcase img{
@@ -819,11 +822,13 @@ border-radius: 4px;
         /* background: white; */
         /* grid-template-columns: 23% 23% 23% 23%; */
         grid-gap: 10px;
+        margin-bottom: 10px;
     }
     .jumia-purchase{
          background: white;
          margin: 10px auto;
          border-radius: 4px;
+         margin-bottom: 2rem;
     }
 
 
@@ -894,11 +899,13 @@ border-radius: 4px;
 
          .navbarSection input{
             width: 91%;
+            min-width: 80%;
             margin-top: 26px;
             border-top-right-radius: 10px;
             border-bottom-right-radius: 10px;
             
         } 
+    
 
       
 
@@ -945,15 +952,17 @@ border-radius: 4px;
 
 
 
-        .price-tag{ margin-left: 7rem;}
+        .price-tag{ margin-left: 6.5rem;
+        
+        }
 
         .jumia-brand-title{
             /* background: red; */
             /* color: white; */
             width: 109.1%;
+           
             /* margin-left: -15px; */
-            /* border-top-left-radius: 4px;
-            border-top-right-radius: 4px; */
+           
             padding: 2px;
             display: flex;
         }
@@ -963,30 +972,33 @@ border-radius: 4px;
 
         .jumia-brand-title h4{
             font-size: 16px;
+            width: 100%;
         }
         .jumia-brand-break{display: block}
         .jumia-brand-deal{ font-size: 12px; }
 
         .jumia-brand-view-more{
-            margin-left: 6rem;
-            /* margin-top: 10px;
+            margin-left: -5rem;
+            /* width: 50%; */
+            
+            margin-top: 10px;
             font-family: Roboto,"Segoe UI","Helvetica Neue",Arial,sans-serif;
-            cursor: pointer; */
+            cursor: pointer;
         }
       
 
 
 
 
-
-
-
-
-
-
-
-
  }
+
+
+ @media screen and (min-width:320px) and (max-width:375px){}
+
+
+
+
+
 
 
 /* https://ng.jumia.is//cms/JMALL/W39/AEACADC4-CCCF-4827-8F16-ED3CA5103CFA.jpeg */
