@@ -10,9 +10,13 @@ let openMenu = document.querySelector("#menu-btn");
 
 openMenu.addEventListener("click", ()=>{
     menubar.style.display = "block";
-
+    lockscroll();
 })
 closeMenu.addEventListener("click", ()=>{
     menubar.style.display = "none";
-
+    
 })
+
+function lockscroll(){
+    window.scrollTo(0,0);
+}

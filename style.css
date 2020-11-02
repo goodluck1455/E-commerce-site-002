@@ -68,7 +68,7 @@ padding: 2px;
 
 /* -- the navbar section begins here -- */
 .navbarSection{
-    background: white;
+    background: white; 
     padding: 8px;
     cursor: pointer;
     user-select: none;
@@ -290,9 +290,14 @@ margin-right: 14px;
     z-index: 80;
     top: 0;
     height:auto;
+    z-index: 999;
+    /* position: fixed; */
     box-sizing:border-box;
     transition: 2s ease-in-out;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
+    overflow: auto;
+  overscroll-behavior: contain;
+  /* height: 300px; */
     display: none;
 }
 
@@ -373,6 +378,7 @@ color: black;
     background: center 0 no-repeat url(https://ng.jumia.is/cms/JMALL/W39/BG.jpg);
     box-sizing: border-box;
     padding: 14px;
+    
     width: 100%;
 }
 
@@ -380,6 +386,7 @@ color: black;
     display: grid;
     grid-template-columns: 19% 55% 18%;
     grid-gap: 24px;
+    
 }
 
 .product-list{
@@ -482,6 +489,22 @@ border-radius: 4px;
     margin: 0px;
     
 }
+
+.carousel-cell {
+    width: 100%;
+    /* height: 200px; */
+    margin-right: 10px;
+    /* background: #8C8; */
+    border-radius: 5px;
+  
+  }
+
+  .flickity-page-dots {
+   top: 20rem;
+}
+  
+  
+
 .product-show-B{
     background: center 0 no-repeat url(https://ng.jumia.is//cms/JMALL/W39/unnamed.png);
     /* background: white; */
@@ -542,12 +565,14 @@ border-radius: 4px;
     width: 20%;
     padding: 8px;
 }
-.jumia-purchase-F, .jumia-purchase-G, .jumia-purchase-H, .jumia-purchase-I{display: none;}
+.jumia-purchase-F, .jumia-purchase-G, .jumia-purchase-H, .jumia-purchase-I{
+    display: none;margin-top: -13px;}
 
 
 /* <!-- Product showcase begins here --------------------------------------------------- --> */
 
 .product-Showcase{
+
     background: white;
     border-radius: 4px;
      padding: 10px;
@@ -678,7 +703,35 @@ border-radius: 4px;
     .product-Show{
         width: 554%;
         max-width: 554%;
-    margin-left: -20px;}
+    margin-left: -20px;
+       padding: 7px;
+    }
+    .productBody .container{padding: 0 !important;}
+
+
+    .product-Show img{
+        width: 100%;
+        height: 15rem;
+        height: calc(80vw / 2);
+        background-size: cover;
+        box-shadow: 0 2px 5px 0 rgba(156, 118, 118, 0.03);
+        
+    }
+    .carousel-cell {
+        width: 80vw;
+        /* height: 200px; */
+        margin-right: 5px;
+        /* background: #8C8; */
+        border-radius: 4px;
+      
+      }
+      .flickity-prev-next-button.next, .flickity-prev-next-button.previous{
+          display: none;
+      }
+   
+      .flickity-page-dots {
+        display: none;
+     }
 
     .jumia-purchaseRoll{
         /* background: white; */
@@ -810,9 +863,9 @@ border-radius: 4px;
     #help-outline, 
     .shopping-cart-2{display: none;}
 
+.productBody{background: #f5f5f5; margin-top: 6.5rem;}
 
-
-
+.productBody .container{padding: 0 !important;}
 
 
     .jumia-purchaseRoll{
@@ -872,17 +925,33 @@ border-radius: 4px;
 
         .product-Show{
             width: 593%;
+            padding: 7px;
             /* max-width: 550%; */
-            /* height: 990%; */
+            /* height: 50%; */
         margin-left: -20px;}
 
         .product-Show img{
-            
+            width: 100%;
             height: 15rem;
+            height: calc(80vw / 2);
             background-size: cover;
-           
-            
+            box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
         }
+        .carousel-cell {
+            width: 80vw;
+            /* height: 200px; */
+            margin-right: 5px;
+            /* background: #8C8; */
+            border-radius: 4px;
+          
+          }
+          .flickity-prev-next-button.next, .flickity-prev-next-button.previous{
+              display: none;
+          }
+       
+          .flickity-page-dots {
+            display: none;
+         }
 
 
 
@@ -901,6 +970,9 @@ border-radius: 4px;
             border-bottom-right-radius: 10px;
             
         } 
+        .navbarSection{position: fixed; 
+            z-index: 999;
+        top:0;}
     
 
       
@@ -992,10 +1064,22 @@ border-radius: 4px;
 
  @media screen and (max-width:320px){
     .navbarSection input{ width: 90%;
-    margin-top: 20px;} 
+    margin-top: 14px;} 
    
+    .navbarSection .fa-search{
+        
+        margin-top: 20px;
+    }
 
-   
+    .jumia-purchase-A p, 
+    .jumia-purchase-B p, 
+    .jumia-purchase-C p, 
+    .jumia-purchase-D p,
+    .jumia-purchase-F p, 
+    .jumia-purchase-G p, 
+    .jumia-purchase-H p, 
+    .jumia-purchase-I p{font-size: .75rem;
+    margin-top: 0px; }
 
     .price-tag{ margin-left: 5rem;}
 
@@ -1003,6 +1087,14 @@ border-radius: 4px;
     .jumia-brand-title{width: 111.5%;}
 
     .jumia-brand-view-more{margin-top: 2px;}
+
+
+    .menubaProductList-A span, .menubaAccount .fa-angle-right{
+        margin-left: 5rem;
+    }
+    #shopping-cart{width:11%;}
+    #perm-identity{width:11.3%;}
+    
 
 
  }
