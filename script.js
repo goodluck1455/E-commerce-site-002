@@ -20,3 +20,7 @@ closeMenu.addEventListener("click", ()=>{
 function lockscroll(){
     window.scrollTo(0,0);
 }
+
+
+
+

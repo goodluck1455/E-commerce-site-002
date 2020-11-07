@@ -294,9 +294,9 @@ margin-right: 14px;
     /* position: fixed; */
     box-sizing:border-box;
     transition: 2s ease-in-out;
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
     overflow: auto;
-  overscroll-behavior: contain;
+  /* overscroll-behavior: contain; */
   /* height: 300px; */
     display: none;
 }
